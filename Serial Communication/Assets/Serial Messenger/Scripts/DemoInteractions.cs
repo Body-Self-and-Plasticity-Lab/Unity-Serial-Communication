@@ -9,7 +9,7 @@ using UnityEngine;
 public class DemoInteractions : MonoBehaviour {
 
 	SerialControl serialController;
-	public string messageToSend;//message to be sent to serial device
+	//public string messageToSend;//message to be sent to serial device
 
 
     // Use this for initialization
