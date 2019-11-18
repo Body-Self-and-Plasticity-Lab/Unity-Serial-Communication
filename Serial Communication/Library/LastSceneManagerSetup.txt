@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Serial Messenger/Scenes/MultipleCoroutines Demo.unity
+- path: Assets/Serial Messenger/Scenes/Demo.unity
   isLoaded: 1
   isActive: 1
