@@ -11,9 +11,31 @@ public class SerialControl : MonoBehaviour {
 	private int baudRate = 9600;//Fixed to 9600 for the trigger box.
 	SerialPort serialDevice;
 
+    public static SerialControl instance;
 
-	void Start () {
-		serialDevice = new SerialPort (portName, baudRate); //initializes a serial port
+    private void Awake()
+    {
+        if (instance == null) instance = this;
+    }
+
+
+    public void Initialize () {
+        portName = PlayerPrefs.GetString("serial port name");
+
+        //for COM ports > 10
+        if (portName != "")
+        {
+            portName = portName.Remove(0, 3);
+
+            int portNumber = int.Parse(portName);
+
+            if (portNumber < 10)
+                portName = "COM" + portNumber;
+            else
+                portName = "\\\\.\\" + "COM" + portNumber;
+        }
+        
+        serialDevice = new SerialPort (portName, baudRate); //initializes a serial port
 		if(serialDevice != null) serialDevice.Close (); //makes sure the device is closed before openning
 		serialDevice.Open (); //opens serial device
 	}
@@ -26,6 +48,7 @@ public class SerialControl : MonoBehaviour {
 	}
 
 	void OnDisable() {
-		serialDevice.Close(); //close device when finished.
+        if (serialDevice.IsOpen)
+            serialDevice.Close(); //close device when finished.
 	}
 }

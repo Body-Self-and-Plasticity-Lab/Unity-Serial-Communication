@@ -29,4 +29,12 @@ public class SetSerialDropdown : MonoBehaviour
         serialDropdown.AddOptions(ports);
         serialDropdown.value = PlayerPrefs.GetInt("serial port");
     }
+
+    public void GetSerialDropDownOptions(){
+        Debug.Log("changed");
+        PlayerPrefs.SetString("serial port name", serialDropdown.options[serialDropdown.value].text);
+        Debug.Log(PlayerPrefs.GetString("serial port name"));
+        SerialControl.instance.Initialize();
+        SerialControl.instance.WriteToPort("8");
+    }
 }
