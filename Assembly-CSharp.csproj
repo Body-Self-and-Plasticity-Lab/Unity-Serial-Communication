@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{0D9E3261-F474-F9C9-4625-CA03E692522F}</ProjectGuid>
+    <ProjectGuid>{3CCB3025-43D5-D9BC-E9D9-AC98450EDEFC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,19 +65,19 @@
     <Compile Include="Assets\Serial Messenger\Scripts\DemoInteractions.cs" />
     <Compile Include="Assets\Serial Messenger\Scripts\MultipleCoroutineInteractions.cs" />
     <Compile Include="Assets\Serial Messenger\Scripts\SerialControl.cs" />
-    <Compile Include="Assets\Serial Messenger\Scripts\SetSerialDropDown.cs" />
+    <Compile Include="Assets\Serial Messenger\Scripts\SetSerialDropdown.cs" />
     <Compile Include="Assets\Serial Messenger\Scripts\WaitForFixedTime.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Serial Communication/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Serial Communication/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Serial Communication/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Serial Communication/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Marte/Documents/GitHub/Unity-Serial-Communication/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
